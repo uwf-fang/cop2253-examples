@@ -82,7 +82,6 @@ public class OperatorsAndPrecedenceDemo {
         System.out.println("\n=== 5) Logical operators (&&, ||, !) + short-circuiting ===");
 
         boolean hasCoupon = false;
-        boolean bigOrder = (qty >= 5);
         boolean qualifiesForDiscount = isMember && (total >= 10.00); // AND
         boolean canGetAnyDeal = qualifiesForDiscount || hasCoupon;   // OR
         boolean notMember = !isMember;                               // NOT
