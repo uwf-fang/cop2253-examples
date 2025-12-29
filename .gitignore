@@ -1,0 +1,41 @@
+.DS_Store
+.vscode
+.vim
+*.class
+
+# Intellij directories
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse directories
+.project
+.classpath
+.settings/
+
+# NetBeans directories
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+
+# Build output directories
+target/
+build/
+out/
+bin/
+
+# Archive files
+*.jar
+*.war
+*.ear
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
