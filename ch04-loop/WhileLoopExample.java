@@ -13,8 +13,7 @@ public class WhileLoopExample {
 
         // Loop continues as long as the input is not the sentinel (-1)
         while (inputVal != -1) {
-            sum = sum + inputVal;
-
+            sum += inputVal;
             // Update read: Get the next value at the end of the loop
             inputVal = scnr.nextInt();
         }

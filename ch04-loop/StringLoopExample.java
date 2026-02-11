@@ -16,7 +16,7 @@ public class StringLoopExample {
 
             // Check if the current character is a lowercase vowel
             if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
-                vowelCount++;
+                ++vowelCount;
             }
         }
 
