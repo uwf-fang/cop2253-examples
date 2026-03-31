@@ -10,9 +10,9 @@ public class MethodMemoryModel {
 
     // A method that modifies array contents.
     // It receives a copy of the reference, so it can change the actual data.
-    public static void modifyArrayContent(int[] arr) {
-        if (arr.length > 0) {
-            arr[0] = 99; // This mutates the content on the heap.
+    public static void modifyArrayContent(int[] arr, int index) {
+        if (index >= 0 && index < arr.length) {
+            arr[index] = 99; // This mutates the content on the heap.
         }
     }
 
@@ -35,12 +35,12 @@ public class MethodMemoryModel {
 
         // Array Pass-by-Value (Mutating Content)
         int[] myArray = {10, 20, 30};
-        modifyArrayContent(myArray);
-        System.out.println("Array after content modification: " + Arrays.toString(myArray)); //
+        modifyArrayContent(myArray, 1);
+        System.out.println("Array after content modification: " + Arrays.toString(myArray));
 
         // Array Pass-by-Value (Reassigning Reference)
         tryToReassignArray(myArray);
-        System.out.println("Array after attempted reassignment: " + Arrays.toString(myArray)); // Still
+        System.out.println("Array after attempted reassignment: " + Arrays.toString(myArray));
 
         // Using a return value in an expression (Composition)
         int total = 10 + calculateSquare(4);
